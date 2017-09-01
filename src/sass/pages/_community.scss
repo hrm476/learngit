@@ -1,0 +1,27 @@
+.community{
+  @extend %body-margin;
+  .introduction{
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  .list-columns{
+    li{
+      display: inline-block;
+      @include span(6);
+      text-align: left;
+      padding: 0 10px;
+    }
+    p{
+      color:#222;
+    }
+  }
+  @include  breakpoint($screen-xs){
+    .introduction{
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+  }
+}

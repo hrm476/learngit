@@ -1,0 +1,33 @@
+
+.install{
+  @extend %body-margin;
+
+  font-family: "Georgia","source-sans-pro","Helvatica Neue",Helvetica,Arial,sans-serif;
+  .list-columns{
+    padding: 0;
+    li{
+      @include span(6);
+      list-style: none;
+      color: #808c99;
+      @extend %fill-img;
+
+      @include breakpoint($screen-xs){
+        @include span(12);
+      }
+
+    }
+    h3{
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+  @include breakpoint($screen-xs){
+    h2{
+      font-size: 26px;
+    }
+    h3{
+      font-size: 14px;
+    }
+  }
+}

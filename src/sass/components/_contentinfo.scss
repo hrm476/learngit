@@ -1,0 +1,67 @@
+
+.contentinfo{
+  background: url("../images/bg_banner.jpg");
+  background-size: 100% 100%;
+  nav{
+    @include padding-leader(1.5);
+    @include padding-trailer(1.5);
+  }
+  font-size: 12px;
+  text-align: left;
+  color: #808c99;
+  ul{
+    position: relative;
+    width: 100%;
+    display: table;
+    padding: 0;
+    li{
+      list-style: none;
+      display: table-cell;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+  }
+  p{
+    padding-bottom: 4.5px;
+  }
+  a{
+    color:#484c55;
+    text-decoration: none;
+    &:visited {
+      color: #b37399;
+    }
+  }
+  .contentinfo-legal{
+    width: span(6);
+    @extend %screen-width;
+  }
+  .contentinfo-tools{
+    width: span(4.5);
+
+    margin-left: 20px;
+    li{
+      padding-right: 15px;
+    }
+    @extend %screen-width;
+  }
+  .contentinfo-social{
+
+    width: span(1.5);
+
+    @include breakpoint($screen-xs){
+    margin-top: 15px;
+    }
+
+
+
+    @extend %screen-width;
+  }
+
+
+  %screen-width{
+    @include breakpoint($screen-xs){
+      display: list-item;
+      @include span(12);
+    }
+  }
+}

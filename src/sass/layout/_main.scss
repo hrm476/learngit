@@ -1,0 +1,26 @@
+$susy: (
+  global-box-sizing:$susy-box-sizing,
+  columns:$susy-columns,  //需要多少列
+  gutters:$susy-gutters,  //每一列之间的间距
+  gutters-position:inside  //位置
+);
+
+@include border-box-sizing();
+
+html{
+  font-family: $global-font-family;
+  font-size:100%;
+  line-height:1.5em;
+  text-align: center;
+}
+header{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+main{
+  @extend %body-padding;
+}
+.container{
+  @include container($container-width);
+  @include clearfix;
+}

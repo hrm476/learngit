@@ -1,0 +1,24 @@
+{
+  "name": "sass-official-website",
+  "version": "1.0.0",
+  "description": "Sass Official Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sass",
+    "Compass"
+  ],
+  "author": "HRM",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-browser-sync": "*",
+    "gulp-compass": "*",
+    "gulp-run-sequence": "*",
+    "run-sequence": "*"
+  }
+}

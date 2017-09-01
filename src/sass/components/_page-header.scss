@@ -1,0 +1,19 @@
+.page-header{
+  background: url("../images/bg_banner.jpg");
+  background-size: 100%;
+  h1{
+    font-family: "source-sans-pro","Helvatica Neue",Helvetica,Arial,sans-serif;
+    color:#808c99;
+    font-weight: 300;
+    font-size: 92px;
+    line-height:1em;
+    letter-spacing:-2px;
+    margin: 20px;
+
+    @include breakpoint($screen-xs){
+      font-size: 32px;
+    }
+  }
+
+
+}

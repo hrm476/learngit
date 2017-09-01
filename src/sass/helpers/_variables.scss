@@ -1,0 +1,19 @@
+//将变量和组件至于此
+/*! global*/
+$global-font-family: "source-sans-pro","Helvatica Neue",Helvetica,Arial,sans-serif !default;
+$susy-box-sizing:border-box;
+$susy-columns:12;
+$susy-gutters:0;
+$container-width:90%;
+
+/*! alert*/
+$alert-background-color:#c6538c !default;
+$alert-color:rgba(255,255,255,0.75) !default;
+
+/*! Pop-stripe*/
+$pop-stripe-colors: #c69 #b37399 #998099 #699 #d2e1dd #fff #e1d7d2 #dadbdf #808c99 #6b717f #036;
+
+
+/*! media query*/
+$screen-xs:max-width 768px;
+$screen-sm:768px;

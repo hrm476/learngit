@@ -1,0 +1,62 @@
+.index{
+  @extend %body-margin;
+  main{
+    padding: 0;
+  }
+  %col6-cell{
+    width:span(6);//susy宽度定义方式
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+
+    @include breakpoint($screen-xs){
+      display: block;
+      @include span(12);
+    }
+  }
+  .hero-image{
+    @extend %col6-cell;
+    @extend %fill-img;
+  }
+  .introduction{
+    @extend %col6-cell;
+
+    padding-left: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    color:#699;
+
+    @include breakpoint($screen-xs){
+      font-size: 16px;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+
+//.index{
+//  %col6-cell{
+//    width: span(6);
+//    text-align: left;
+//    display: table-cell;
+//    vertical-align: middle;
+//
+//    @include breakpoint($screen-xs){
+//      width: span(12);
+//      display: block;
+//    }
+//  }
+//  .hero-image{
+//    @extend %col6-cell;
+//    @extend %fill-img;
+//  }
+//  .introduction{
+//    @extend %col6-cell;
+//    padding-left: 20px;
+//    font-size: 24px;
+//    line-height: 36px;
+//    color: #699;
+//  }
+//}

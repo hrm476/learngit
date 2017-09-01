@@ -1,0 +1,28 @@
+.guide{
+  @extend %body-margin;
+  text-align: left;
+  @include  breakpoint($screen-xs){
+    .introduction{
+      font-size: 18px;
+      line-height: 28px;
+    }
+    li{
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .main{
+    .slides{
+      h2{
+        font-size:48px;
+        font-weight:300;
+        padding-bottom: 24px;
+        @include breakpoint($screen-xs){
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+
+}

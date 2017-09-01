@@ -1,0 +1,15 @@
+.libscss{
+
+    @include  breakpoint($screen-xs){
+      .introduction{
+        font-size: 18px;
+        line-height: 28px;
+      }
+      li{
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+
+}
